@@ -26,10 +26,10 @@ How to use this plugin.
 
 ### Sass
 
-Change your `application.css` to `application.css.scss`.
+Change your `application.css` to `application.scss`.
 
 ```console
-$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.css.scss
+$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
 ```
 
 Then, remove all the `*= require_self` and `*= require_tree .` statements from the sass file. Instead, use `@import` to import Sass files.
@@ -37,7 +37,7 @@ Then, remove all the `*= require_self` and `*= require_tree .` statements from t
 Do not use `*= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap mixins or variables.
 
 Using [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
-`application.css.scss` file:
+`application.scss` file:
 
 ```scss
 @import "prettydocs";
