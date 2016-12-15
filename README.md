@@ -17,10 +17,6 @@ Other dependencies:
 Add this line to your application's Gemfile:
 
 ```ruby
-# Twitter Bootstrap Sass - https://github.com/twbs/bootstrap-sass
-gem 'bootstrap-sass', '~> 3.3.7'
-# Font Awesome for Rails - https://github.com/bokmann/font-awesome-rails
-gem "font-awesome-rails"
 # PrettyDocs Rails
 gem 'prettydocs_rails'
 ```
