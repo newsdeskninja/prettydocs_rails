@@ -24,6 +24,15 @@ $ gem install prettydocs_rails
 ## Contributing
 * [Michael Price](http://twitter.com/michaeljprice)
 
+## Features
+* Fully Responsive
+* HTML5 + CSS3
+* Built on Bootstrap 3
+* 6 Colour Schemes
+* 600+ FontAwesome icons
+* LESS files included
+* Compatible with all modern browsers
+
 ## PrettyDocs Credits
 * [Xiaoying Riley](https://twitter.com/3rdwave_themes)
 * [3rd Wave Media](http://themes.3rdwavemedia.com/demo/prettydocs/license.html)
