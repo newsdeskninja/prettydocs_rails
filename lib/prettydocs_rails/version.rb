@@ -1,5 +1,3 @@
 module PrettydocsRails
-  module Rails
-    VERSION = '1.1.6'
-  end
+  VERSION = '1.1.5'
 end
