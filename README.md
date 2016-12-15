@@ -52,6 +52,10 @@ Add the following line to your `application.js` file:
 //= require prettydocs
 ```
 
+### Demo
+
+A live demo of PrettyDocs is available at [http://themes.3rdwavemedia.com/demo/prettydocs/index.html](http://themes.3rdwavemedia.com/demo/prettydocs/index.html). To view example pages, download the original files.
+
 ## Contributing
 * [Michael Price](http://twitter.com/michaeljprice)
 
