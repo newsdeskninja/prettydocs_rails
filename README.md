@@ -2,7 +2,26 @@
 Short description and motivation.
 
 ## Usage
-How to use my plugin.
+How to use this plugin.
+
+### Bootstrap Sass
+
+Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
+
+```scss
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+```
+
+### Font Awesome
+
+Using [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
+`application.css.scss` file:
+
+```scss
+@import "font-awesome";
+```
 
 ## Installation
 Add this line to your application's Gemfile:
