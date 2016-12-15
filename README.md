@@ -12,6 +12,7 @@ Other dependencies:
 
 * [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
 * [Font-Awesome Rails](https://github.com/bokmann/font-awesome-rails)
+* NOT INCLUDED: Elegant Font is not currently included.
 
 ## Installation
 Add this line to your application's Gemfile:
