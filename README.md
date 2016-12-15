@@ -1,25 +1,60 @@
-# PrettydocsRails
-Short description and motivation.
+# PrettyDocs Rails
+A rails plugin for the PrettyDocs Bootstrap theme.
 
-## Usage
-How to use my plugin.
+## Dependencies
+
+This is has been tested on the following:
+
+* Ruby 2.3.3
+* Rails 5.0.0.1
+
+Other dependencies:
+
+* [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
+* [Font-Awesome Rails](https://github.com/bokmann/font-awesome-rails)
+* NOT INCLUDED: Elegant Icon Font is not currently included.
 
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
+# PrettyDocs Rails
 gem 'prettydocs_rails'
 ```
 
-And then execute:
-```bash
-$ bundle
+## Usage
+How to use this plugin.
+
+### Sass
+
+Change your `application.css` to `application.scss`.
+
+```console
+$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
 ```
 
-Or install it yourself as:
-```bash
-$ gem install prettydocs_rails
+Then, remove all the `*= require_self` and `*= require_tree .` statements from the sass file. Instead, use `@import` to import Sass files.
+
+Do not use `*= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap mixins or variables.
+
+Using [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
+`application.scss` file:
+
+```scss
+@import "prettydocs";
 ```
+
+### JavaScript
+
+Add the following line to your `application.js` file:
+
+```js
+//= require prettydocs
+```
+
+### Demo
+
+A live demo of PrettyDocs is available at [http://themes.3rdwavemedia.com/demo/prettydocs/index.html](http://themes.3rdwavemedia.com/demo/prettydocs/index.html). To view example pages, download the original files.
 
 ## Contributing
 * [Michael Price](http://twitter.com/michaeljprice)

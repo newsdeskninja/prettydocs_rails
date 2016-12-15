@@ -14,9 +14,17 @@ Gem::Specification.new do |s|
   s.description = "PrettyDocs by 3rd Wave Media adapted for Ruby on Rails."
   s.license     = "Creative Commons Attribution 3.0 License (CC BY 3.0)"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 5.0.0", ">= 5.0.0.1"
 
   s.add_development_dependency 'pg', '~> 0.15'
+
+  # Twitter Bootstrap Sass - https://github.com/twbs/bootstrap-sass
+  s.add_dependency 'bootstrap-sass', '~> 3.3.7'
+  s.add_development_dependency 'bootstrap-sass', '~> 3.3.7'
+
+  # Font Awesome for Rails - https://github.com/bokmann/font-awesome-rails
+  s.add_dependency "font-awesome-rails", '~> 4.7.0.1'
+  s.add_development_dependency "font-awesome-rails", '~> 4.7.0.1'
 end
