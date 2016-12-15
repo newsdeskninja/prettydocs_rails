@@ -3,3 +3,4 @@
 //= require jquery-scrollTo/jquery.scrollTo
 //= require main
 //= require prism
+//= require ekko-lightbox
