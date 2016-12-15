@@ -13,23 +13,24 @@ Other dependencies:
 * [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
 * [Font-Awesome Rails](https://github.com/bokmann/font-awesome-rails)
 
+## Installation
+Add this line to your application's Gemfile:
+
+```ruby
+# Twitter Bootstrap Sass - https://github.com/twbs/bootstrap-sass
+gem 'bootstrap-sass', '~> 3.3.7'
+# Font Awesome for Rails - https://github.com/bokmann/font-awesome-rails
+gem "font-awesome-rails"
+# PrettyDocs Rails
+gem 'prettydocs_rails'
+```
+
 ## Usage
 How to use this plugin.
 
-### Bootstrap Sass
+### Sass
 
-Import Bootstrap styles in `app/assets/stylesheets/application.css.scss`:
-
-```scss
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
-@import "bootstrap-sprockets";
-@import "bootstrap";
-```
-
-`bootstrap-sprockets` must be imported before `bootstrap` for the icon fonts to work.
-
-Make sure the file has `.scss` extension (or `.sass` for Sass syntax). If you have just generated a new Rails app,
-it may come with a `.css` file instead. If this file exists, it will be served instead of Sass, so rename it:
+Change your `application.css` to `application.css.scss`.
 
 ```console
 $ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.css.scss
@@ -39,42 +40,19 @@ Then, remove all the `*= require_self` and `*= require_tree .` statements from t
 
 Do not use `*= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap mixins or variables.
 
-Require Bootstrap Javascripts in `app/assets/javascripts/application.js`:
-
-```js
-//= require jquery
-//= require bootstrap-sprockets
-```
-
-`bootstrap-sprockets` and `bootstrap` [should not both be included](https://github.com/twbs/bootstrap-sass/issues/829#issuecomment-75153827) in `application.js`.
-
-`bootstrap-sprockets` provides individual Bootstrap Javascript files (`alert.js` or `dropdown.js`, for example), while
-`bootstrap` provides a concatenated file containing all Bootstrap Javascripts.
-
-### Font Awesome
-
 Using [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your
 `application.css.scss` file:
 
 ```scss
-@import "font-awesome";
+@import "prettydocs";
 ```
 
-## Installation
-Add this line to your application's Gemfile:
+### JavaScript
 
-```ruby
-gem 'prettydocs_rails'
-```
+Add the following line to your `application.js` file:
 
-And then execute:
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install prettydocs_rails
+```js
+//= require prettydocs
 ```
 
 ## Contributing
