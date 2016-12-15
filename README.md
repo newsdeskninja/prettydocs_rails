@@ -1,12 +1,24 @@
-# PrettydocsRails
-Short description and motivation.
+# PrettyDocs Rails
+A rails plugin for the PrettyDocs Bootstrap theme.
+
+## Dependencies
+
+This is has been tested on the following:
+
+* Ruby 2.3.3
+* Rails 5.0.0.1
+
+Other dependencies:
+
+* [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
+* [Font-Awesome Rails](https://github.com/bokmann/font-awesome-rails)
 
 ## Usage
 How to use this plugin.
 
 ### Bootstrap Sass
 
-Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
+Import Bootstrap styles in `app/assets/stylesheets/application.css.scss`:
 
 ```scss
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
