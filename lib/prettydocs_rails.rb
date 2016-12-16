@@ -4,4 +4,6 @@ require 'bootstrap-sass'
 require 'font-awesome-rails'
 
 module PrettydocsRails
+  module Rails
+  end
 end
