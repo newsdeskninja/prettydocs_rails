@@ -14,10 +14,9 @@ Gem::Specification.new do |s|
   s.description = "PrettyDocs by 3rd Wave Media adapted for Ruby on Rails."
   s.license     = "CC-BY-3.0"
 
-  s.files        = `git ls-files`.split("\n")
-  s.executables  = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
+  s.files = Dir["{app,config,db,lib,vendor}/**/*", "LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.0.0", ">= 5.0.0.1"
+  s.add_dependency "railties", ">= 4.2.0"
 
   s.add_development_dependency 'pg', '~> 0.15'
 
